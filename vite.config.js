@@ -197,6 +197,8 @@ export default defineConfig({
 		addTransformIndexHtml
 	],
 	server: {
+		host: true,          // permite conexiones externas
+    	port: 5173,			//puerto deseado
 		cors: true,
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
