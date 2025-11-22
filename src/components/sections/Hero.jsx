@@ -63,7 +63,7 @@ const Hero = ({ onInspectionClick }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl mb-8 text-gray-200"
         >
-          Specialized in mechanical and troubleshooting solutions acorss the entire maritime industry.
+          Specialized in mechanical and troubleshooting solutions across the entire maritime industry.
         </motion.p>
 
         <motion.div
