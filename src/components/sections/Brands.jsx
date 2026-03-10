@@ -6,6 +6,7 @@ const Brands = () => {
         { name: 'Benetti', logo: '/benetti.png' },
         { name: 'Abyc', logo: '/abyc.png' },
         { name: 'Mia', logo: '/mia.png' },
+        { name: 'Besenzoni', logo: '/besenzonisvg.svg' },
     ];
 
     return (
@@ -19,7 +20,7 @@ const Brands = () => {
                         Our experience spans the world's most prestigious shipyards.
                     </p>
                 </div>
-                <div className="flex items-center justify-around">
+                <div className="flex flex-col items-center justify-around md:flex-row">
                     {brands.map(({logo, name}, index) => (
                         <motion.div
                             key={name}
@@ -29,7 +30,7 @@ const Brands = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="flex justify-center"
                         >
-                            <img  className="h-24 w-24 text-gray-400" alt={`${name} logo`} src={logo} />
+                            <img  className="h-36 w-36 text-gray-400" alt={`${name} logo`} src={logo} />
                         </motion.div>
                     ))}
                 </div>
